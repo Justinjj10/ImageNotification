@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>450352256889-h9df1vmbr1il0gtcv8h1q1ftj2ku15n1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.450352256889-h9df1vmbr1il0gtcv8h1q1ftj2ku15n1</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>450352256889-bjnlbebk3q9a7fhv4ehm85qcrh3klvah.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC8QRaFCZVl958JAzocDrQEy--hukPsXbE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>450352256889</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.app.Dexacoin</string>
+	<key>PROJECT_ID</key>
+	<string>dexacoin-development</string>
+	<key>STORAGE_BUCKET</key>
+	<string>dexacoin-development.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:450352256889:ios:a1a6b23c8f47a516c3c1a8</string>
+</dict>
+</plist>
