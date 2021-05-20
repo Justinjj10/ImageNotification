@@ -27,7 +27,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
             application.registerUserNotificationSettings(settings)
         }
+        
+        let openAction = UNNotificationAction(identifier: "OpenNotification", title: NSLocalizedString("OPEN", comment: "open"), options: UNNotificationActionOptions.foreground)
+        let deafultCategory = UNNotificationCategory(identifier: "myNotificationCategory", actions: [openAction], intentIdentifiers: [], options: [])
+               UNUserNotificationCenter.current().setNotificationCategories(Set([deafultCategory]))
         application.registerForRemoteNotifications()
+        
         return true
     }
 }
@@ -49,6 +54,7 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
                               willPresent notification: UNNotification,
     withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
     let userInfo = notification.request.content.userInfo
+    
     if let messageID = userInfo[gcmMessageIDKey] {
       print("Message ID: \(messageID)")
     }
@@ -58,6 +64,8 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
   func userNotificationCenter(_ center: UNUserNotificationCenter,
                               didReceive response: UNNotificationResponse,
                               withCompletionHandler completionHandler: @escaping () -> Void) {
+    
+
     completionHandler()
   }
     
